@@ -1,0 +1,52 @@
+[
+  {
+    "idSerie": "serie-01",
+    "nombreSerie": "Love Lab",
+    "portada": "../assets/portada-maroon-5/ep-1.jpg",
+    "episodios": [
+      {
+        "idVideo": "ax-01",
+        "titulo": "Capítulo 1: El Despertar",
+        "url": "https://ia600906.us.archive.org/6/items/love-lab-capitulo-1/love%20lab%20-%20capitulo%201.mp4",
+        "introInicio": 24,
+        "introFin": 114,
+        "endingInicio": 1345,
+        "endingFin": 1429
+      },
+      {
+        "idVideo": "ax-02",
+        "titulo": "Capítulo 2: El Despertar",
+        "url": "https://ia601505.us.archive.org/20/items/love-lab-capitulo-2/love%20lab%20-%20capitulo%202.mp4",
+        "introInicio": 24,
+        "introFin": 114,
+        "endingInicio": 1345,
+        "endingFin": 1429
+      }
+    ]
+  },
+  {
+    "idSerie": "serie-02",
+    "nombreSerie": "test 1",
+    "portada": "../assets/portada-juanes/ep-1.jpg",
+    "episodios": [
+      {
+        "idVideo": "sy-01",
+        "titulo": "Episodio 1: Misterio",
+        "url": "https://dn710809.ca.archive.org/0/items/AnimeNeSSBEp06720p/%5BAnime-Ne%5D%20SSB_Ep06%20%5B720p%5D.mp4",
+        "introInicio": 3,
+        "introFin": 10,
+        "endingInicio": 2500,
+        "endingFin": 3000
+      },
+      {
+        "idVideo": "sy-02",
+        "titulo": "Episodio 2: Misterio",
+        "url": "https://dn711301.ca.archive.org/0/items/AnimeNeSSBEp08720p/%5BAnime-Ne%5D%20SSB_Ep08%20%5B720p%5D.mp4",
+        "introInicio": 3,
+        "introFin": 10,
+        "endingInicio": 2500,
+        "endingFin": 3000
+      }
+    ]
+  }
+]

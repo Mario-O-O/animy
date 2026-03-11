@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Streaming Personal</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div id="pantalla-inicio">
+    <header class="header-inicio">
+      <h1>Mis Series</h1>
+    </header>
+    <div class="grid-series" id="grid-series">
+    </div>
+  </div>
+
+  <div id="pantalla-reproductor" class="video-container oculto">
+    <video id="reproductor"></video>
+
+    <div id="info-pausa" class="info-pausa oculto">
+      <h4 id="pausa-serie">Nombre Serie</h4>
+      <h2 id="pausa-capitulo">Nombre Capítulo</h2>
+    </div>
+
+    <button id="btn-volver-inicio" class="btn-interfaz" style="left: 20px;">🏠 Volver</button>
+    <button id="btn-abrir-lista" class="btn-interfaz" style="left: 140px;">☰ Episodios</button>
+
+    <button id="btn-skip-intro" class="btn-flotante oculto">Omitir Intro</button>
+    <button id="btn-skip-ending" class="btn-flotante oculto">Siguiente Episodio</button>
+
+    <div id="controles-video" class="controles-video">
+      <div class="barra-progreso-contenedor" id="barra-progreso-contenedor">
+        <div class="barra-progreso" id="barra-progreso"></div>
+      </div>
+
+      <div class="controles-botones">
+        <button id="btn-play-pause" class="control-btn">▶</button>
+        <span id="tiempo-texto">00:00 / 00:00</span>
+        <div style="flex-grow: 1;"></div>
+        <button id="btn-fullscreen" class="control-btn">⛶</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal-episodios" class="modal oculto">
+    <div class="modal-contenido">
+      <span id="btn-cerrar-modal" class="cerrar">&times;</span>
+      <h2>Lista de Episodios</h2>
+      <ul id="lista-videos"></ul>
+    </div>
+  </div>
+
+  <div id="pantalla-transicion" class="pantalla-mensaje oculto">
+    <div class="mensaje-contenido">
+      <h2>¡Has terminado la serie!</h2>
+      <p>Volviendo al inicio en 3 segundos...</p>
+    </div>
+  </div>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

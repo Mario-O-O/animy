@@ -1,0 +1,424 @@
+/* Reset básico y fondo oscuro estilo cine */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  overflow: hidden;
+  /* Evita scroll en la pantalla principal */
+}
+
+/* El reproductor ocupa toda la pantalla */
+.video-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+#reproductor {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Estilos de los botones flotantes (Omitir Intro / Ending) */
+.btn-flotante {
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.btn-flotante:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Botón de la interfaz para abrir episodios */
+.btn-interfaz {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.btn-interfaz:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- ESTILOS DEL MODAL --- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.modal-contenido {
+  background-color: #181818;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #aaa;
+}
+
+.cerrar:hover {
+  color: #fff;
+}
+
+#lista-videos {
+  list-style: none;
+  margin-top: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+#lista-videos li {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#lista-videos li:hover {
+  background-color: #333;
+}
+
+#lista-videos li.activo {
+  border-left: 4px solid #e50914;
+  /* Rojo tipo Netflix */
+  background-color: #222;
+}
+
+/* Clase de utilidad para ocultar elementos con JS */
+.oculto {
+  display: none !important;
+}
+
+
+/* --- ESTILOS PANTALLA DE INICIO --- */
+#pantalla-inicio {
+  padding: 40px;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  /* Permite scroll si hay muchas series */
+  background-color: #141414;
+}
+
+.header-inicio {
+  margin-bottom: 30px;
+}
+
+.header-inicio h1 {
+  color: #e50914;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Cuadrícula adaptable para las portadas */
+.grid-series {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Tarjeta individual de cada serie */
+.tarjeta-serie {
+  cursor: pointer;
+  background-color: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto interactivo al pasar el mouse */
+.tarjeta-serie:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.tarjeta-serie img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.tarjeta-serie h3 {
+  padding: 15px 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #fff;
+  margin: 0;
+}
+
+/* --- PANTALLA DE TRANSICIÓN --- */
+.pantalla-mensaje {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.mensaje-contenido {
+  text-align: center;
+  color: #fff;
+  animation: pulse 1.5s infinite;
+  /* Efecto de latido suave */
+}
+
+.mensaje-contenido h2 {
+  font-size: 2.5rem;
+  color: #e50914;
+  /* Rojo tipo Netflix */
+  margin-bottom: 10px;
+}
+
+.mensaje-contenido p {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* Animación de latido */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* --- OVERLAY DE PAUSA --- */
+.info-pausa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Fondo oscuro semitransparente */
+  backdrop-filter: blur(4px);
+  /* Desenfoque elegante estilo Apple/Netflix */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  /* Por encima del video, debajo de los botones de omitir */
+  pointer-events: none;
+  /* Permite hacer clic "a través" de esta capa para usar los controles del video */
+  color: white;
+  text-align: center;
+}
+
+.info-pausa h4 {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.info-pausa h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* --- CONTROLES DE VIDEO PERSONALIZADOS --- */
+.controles-video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 15;
+}
+
+/* La línea por donde avanza el video */
+.barra-progreso-contenedor {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  transition: height 0.2s;
+}
+
+.barra-progreso-contenedor:hover {
+  height: 10px;
+  /* Se hace más gruesa al pasar el mouse */
+}
+
+/* La parte roja que indica el progreso */
+.barra-progreso {
+  height: 100%;
+  background-color: #e50914;
+  width: 0%;
+  /* JS cambiará esto */
+  border-radius: 4px;
+  pointer-events: none;
+  /* Para que el clic vaya al contenedor */
+}
+
+/* Contenedor de Play y Tiempo */
+.controles-botones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.control-btn:hover {
+  transform: scale(1.1);
+  color: #e50914;
+}
+
+#tiempo-texto {
+  font-size: 1rem;
+  color: #ddd;
+  font-family: monospace;
+  /* Para que los números no salten */
+}
+
+/* --- CONTROLES DE VIDEO PERSONALIZADOS --- */
+.controles-video {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 30px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 15;
+}
+
+/* La línea por donde avanza el video */
+.barra-progreso-contenedor {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  border-radius: 4px;
+  position: relative;
+  transition: height 0.2s;
+}
+
+.barra-progreso-contenedor:hover {
+  height: 10px;
+  /* Se hace más gruesa al pasar el mouse */
+}
+
+/* La parte roja que indica el progreso */
+.barra-progreso {
+  height: 100%;
+  background-color: #e50914;
+  width: 0%;
+  /* JS cambiará esto */
+  border-radius: 4px;
+  pointer-events: none;
+  /* Para que el clic vaya al contenedor */
+}
+
+/* Contenedor de Play y Tiempo */
+.controles-botones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.control-btn:hover {
+  transform: scale(1.1);
+  color: #e50914;
+}
+
+#tiempo-texto {
+  font-size: 1rem;
+  color: #ddd;
+  font-family: monospace;
+  /* Para que los números no salten */
+}
