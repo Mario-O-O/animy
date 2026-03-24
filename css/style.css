@@ -197,7 +197,7 @@ body {
 .tarjeta-serie {
   cursor: pointer;
   background-color: #222;
-  border-radius: 8px;
+  border-radius: 20px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
