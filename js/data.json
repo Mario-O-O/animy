@@ -969,5 +969,192 @@
         "temporada": 1
       }
     ]
+  },
+  {
+    "idSerie": "serie-04",
+    "nombreSerie": "Gekkan Shoujo Nozaki-kun",
+    "portada": "./assets/gekkan-shoujo-nozaki-kun.jpg",
+    "episodios": [
+      {
+        "idVideo": "gsnk-01",
+        "titulo": "Ep. 1 - Este amor se está convirtiendo en una manga Shojo",
+        "url": "https://www.dropbox.com/scl/fi/xrsd2gzguceirb55bk98c/gekkan-shoujo-nozaki-kun-capitulo-1.mp4?rlkey=gt85j7gr9qp0tzmuk83pxd3fk&st=xdlcjzrv&raw=1",
+        "introInicio": 138,
+        "introFin": 228,
+        "endingInicio": 1280,
+        "endingFin": 1370,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-02",
+        "titulo": "Ep. 2 - Encantado de conocer a un nuevo protagonista",
+        "url": "https://www.dropbox.com/scl/fi/jjipavrpcu4cnon8vuf4a/gekkan-shoujo-nozaki-kun-capitulo-2.mp4?rlkey=z0x8x7u73z5bp08nqilfdaav7&st=gql2v82b&raw=1",
+        "introInicio": 93,
+        "introFin": 183,
+        "endingInicio": 1236,
+        "endingFin": 1326,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-03",
+        "titulo": "Ep. 3 - Tercera edición: Violencia contra el Príncipe",
+        "url": "https://www.dropbox.com/scl/fi/w178zfruzbzf3h5rwu6eg/gekkan-shoujo-nozaki-kun-capitulo-3.mp4?rlkey=ml9ot9hdvq0r8bx8e5gsqgtv2&st=ec7fqie2&raw=1",
+        "introInicio": 87,
+        "introFin": 177,
+        "endingInicio": 1240,
+        "endingFin": 1330,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-04",
+        "titulo": "Ep. 4 - Hay ocasiones en que los hombres deben pelear",
+        "url": "https://www.dropbox.com/scl/fi/veaz8p6mbllw2n09c12r0/gekkan-shoujo-nozaki-kun-capitulo-4.mp4?rlkey=88t48xalzsmxdjc2ujln2gk21&st=r9sn0r2a&raw=1",
+        "introInicio": 73,
+        "introFin": 163,
+        "endingInicio": 1276,
+        "endingFin": 1366,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-05",
+        "titulo": "Ep. 5 - El hombre que dibuja el amor",
+        "url": "https://www.dropbox.com/scl/fi/4bv8mvdlhjjnoyjwx7ccx/gekkan-shoujo-nozaki-kun-capitulo-5.mp4?rlkey=2ghr2j4t0xw48t4byr5ec95ga&st=nw8toqxu&raw=1",
+        "introInicio": 90,
+        "introFin": 180,
+        "endingInicio": 1302,
+        "endingFin": 1392,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-06",
+        "titulo": "Ep. 6 - Te hechicé",
+        "url": "https://www.dropbox.com/scl/fi/138uyclgw2wdmy2lclf2c/gekkan-shoujo-nozaki-kun-capitulo-6.mp4?rlkey=gi95vaxvqq9ua7gikh4ii76x8&st=4irb45uy&raw=1",
+        "introInicio": 89,
+        "introFin": 179,
+        "endingInicio": 1280,
+        "endingFin": 1370,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-07",
+        "titulo": "Ep. 7 - Nozaki-kun, el cerebro de un mangaka",
+        "url": "https://www.dropbox.com/scl/fi/oij910gmq1k0j0igos4zy/gekkan-shoujo-nozaki-kun-capitulo-7.mp4?rlkey=u3dt1frgs6xwniae2e5hlcmxo&st=4wv3nbvj&raw=1",
+        "introInicio": 68,
+        "introFin": 158,
+        "endingInicio": 1313,
+        "endingFin": 1403,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-08",
+        "titulo": "Ep. 8 - El príncipe (chica) de los problemas escolares",
+        "url": "https://www.dropbox.com/scl/fi/vnh2r18kr5jvva94jusdt/gekkan-shoujo-nozaki-kun-capitulo-8.mp4?rlkey=41gb376ffai06mf43ivvpimp1&st=qodbdyae&raw=1",
+        "introInicio": 41,
+        "introFin": 131,
+        "endingInicio": 1275,
+        "endingFin": 1365,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-09",
+        "titulo": "Ep. 9 - ¿Tienes suficiente emoción?",
+        "url": "https://www.dropbox.com/scl/fi/tqx6gny1k54ukbjhw5cmd/gekkan-shoujo-nozaki-kun-capitulo-9.mp4?rlkey=7gzpm0puwq7rw6rm7khwu2mck&st=2tdtynsx&raw=1",
+        "introInicio": 45,
+        "introFin": 135,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-10",
+        "titulo": "Ep. 10 - Lo que se fortalece es nuestro vínculo y nuestras riendas",
+        "url": "https://www.dropbox.com/scl/fi/opvs0jut8hg935svp0q4a/gekkan-shoujo-nozaki-kun-capitulo-10.mp4?rlkey=qjzlae503yx4q9m3g2j2l45fm&st=rthgj9mm&raw=1",
+        "introInicio": 48,
+        "introFin": 138,
+        "endingInicio": 1283,
+        "endingFin": 1373,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-11",
+        "titulo": "Ep. 11 - Enamorémonos del arroz",
+        "url": "https://www.dropbox.com/scl/fi/otjign0cbbbfyjdrq6d6a/gekkan-shoujo-nozaki-kun-capitulo-11.mp4?rlkey=jtjnu59x5kjvylp5e07epyv53&st=64vtde9r&raw=1",
+        "introInicio": 201,
+        "introFin": 291,
+        "endingInicio": 1287,
+        "endingFin": 1377,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-12",
+        "titulo": "Ep. 12 - Si estos sentimientos no son amor, entonces no hay amor en el mundo",
+        "url": "https://www.dropbox.com/scl/fi/eryf4t9ki3cn0p8zqst68/gekkan-shoujo-nozaki-kun-capitulo-12.mp4?rlkey=gewk3cke1dsfp1vxm9l012i7o&st=lh4wlppu&raw=1",
+        "introInicio": 49,
+        "introFin": 139,
+        "endingInicio": 1423,
+        "endingFin": 1423,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-13",
+        "titulo": "Especial 1",
+        "url": "https://www.dropbox.com/scl/fi/j496gprka8yukvcso98ar/gekkan-shoujo-nozaki-kun-especial-1.mp4?rlkey=wi7r9xe8ewg07gwx6lksa4nvf&st=j6m897ct&raw=1",
+        "introInicio": 0,
+        "introFin": 18,
+        "endingInicio": 170,
+        "endingFin": 184,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-14",
+        "titulo": "Especial 2",
+        "url": "https://www.dropbox.com/scl/fi/2fcahhvzqpka5d77rqf2j/gekkan-shoujo-nozaki-kun-especial-2.mp4?rlkey=d1sggbfc6ydjgarjvqc7olny2&st=ktfv4518&raw=1",
+        "introInicio": 0,
+        "introFin": 18,
+        "endingInicio": 173,
+        "endingFin": 188,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-15",
+        "titulo": "Especial 3",
+        "url": "https://www.dropbox.com/scl/fi/2fcahhvzqpka5d77rqf2j/gekkan-shoujo-nozaki-kun-especial-2.mp4?rlkey=d1sggbfc6ydjgarjvqc7olny2&st=ktfv4518&raw=1",
+        "introInicio": 0,
+        "introFin": 18,
+        "endingInicio": 184,
+        "endingFin": 199,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-16",
+        "titulo": "Especial 4",
+        "url": "https://www.dropbox.com/scl/fi/sk3gxc5ecgzzsz04ci2p3/gekkan-shoujo-nozaki-kun-especial-4.mp4?rlkey=jcm4kyj8kikbyrz16pv86e2t1&st=kk0n2tr6&raw=1",
+        "introInicio": 0,
+        "introFin": 18,
+        "endingInicio": 207,
+        "endingFin": 222,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-17",
+        "titulo": "Especial 5",
+        "url": "https://www.dropbox.com/scl/fi/zmcds9owa1w2wsvwnhyqc/gekkan-shoujo-nozaki-kun-especial-5.mp4?rlkey=t1aqzlr77mt4x4dmqd72e22w5&st=g0zygeg2&raw=1",
+        "introInicio": 0,
+        "introFin": 18,
+        "endingInicio": 166,
+        "endingFin": 181,
+        "temporada": 1
+      },
+      {
+        "idVideo": "gsnk-18",
+        "titulo": "Especial 6",
+        "url": "https://www.dropbox.com/scl/fi/13d2z413dfnzchwzgfewa/gekkan-shoujo-nozaki-kun-especial-6.mp4?rlkey=znums2klhe8s6g77ym69orogg&st=vwrgqdyw&raw=1",
+        "introInicio": 0,
+        "introFin": 18,
+        "endingInicio": 167,
+        "endingFin": 182,
+        "temporada": 1
+      }
+    ]
   }
 ]
