@@ -113,7 +113,8 @@ body {
 .modal-contenido {
   background-color: #181818;
   padding: 30px;
-  border-radius: 8px;
+  padding-top: 50px;
+  border-radius: 35px;
   width: 90%;
   max-width: 500px;
   position: relative;
@@ -146,6 +147,10 @@ body {
   border-bottom: 1px solid #333;
   cursor: pointer;
   transition: background 0.2s;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 #lista-videos li:hover {
@@ -244,13 +249,13 @@ body {
 .mensaje-contenido {
   text-align: center;
   color: #fff;
-  animation: pulse 1.5s infinite;
+  /* animation: pulse 1.5s infinite; */
   /* Efecto de latido suave */
 }
 
 .mensaje-contenido h2 {
   font-size: 2.5rem;
-  color: #e50914;
+  color: #fff;
   /* Rojo tipo Netflix */
   margin-bottom: 10px;
 }
@@ -540,6 +545,82 @@ body {
 
 #indicador-adelantar {
   right: 10%;
+}
+
+/* --- SELECTOR DE TEMPORADAS --- */
+.select-temporada {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  position: relative;
+  background-image: url(../assets/icons/flecha-selec.png);
+  background-repeat: no-repeat;
+  background-position: right 1em center;
+  background-size: 0.8em;
+  /* Muestra la flechita nativa del menú */
+}
+
+.select-temporada:hover {
+  border-color: #e50914;
+  /* Un toque rojo al pasar el mouse */
+}
+
+.select-temporada option {
+  background-color: #141414;
+  color: white;
+}
+
+.btn-cerrar {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+.btn-cerrar:hover {
+  background: #e50914;
+}
+
+.equis {
+  height: 14px;
+  width: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+}
+
+.line {
+  background-color: #fff;
+  position: absolute;
+}
+
+.line-1 {
+  height: 2px;
+  width: 100%;
+}
+
+.line-2 {
+  width: 2px;
+  height: 100%;
 }
 
 @media only screen and (max-width: 768px) {

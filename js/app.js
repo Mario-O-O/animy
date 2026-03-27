@@ -34,6 +34,8 @@ const loader = document.getElementById('loader');
 const indicadorRetroceder = document.getElementById('indicador-retroceder');
 const indicadorAdelantar = document.getElementById('indicador-adelantar');
 
+const selectTemporada = document.getElementById('select-temporada');
+
 let catalogo = [];
 let serieActivaIndex = 0;
 let episodioActivoIndex = 0;
@@ -208,6 +210,8 @@ function reproducirSiguiente() {
 }
 
 // --- 5. LÓGICA DEL MODAL DE EPISODIOS ---
+
+// ¡Estos eran los dos botones que se nos habían borrado!
 btnAbrirLista.addEventListener('click', () => {
   modalEpisodios.classList.remove('oculto');
   renderizarEpisodios(serieActivaIndex);
@@ -217,14 +221,55 @@ btnCerrarModal.addEventListener('click', () => {
   modalEpisodios.classList.add('oculto');
 });
 
-function renderizarEpisodios(sIndex) {
+function renderizarEpisodios(sIndex, temporadaAFiltrar = null) {
   mostrandoSeries = false;
   listaVideos.innerHTML = '';
   const serie = catalogo[sIndex];
 
   tituloModal.textContent = `Episodios de ${serie.nombreSerie}`;
 
+  // 1. Extraemos qué temporadas existen (ej: [1, 2, 3])
+  const temporadasUnicas = [...new Set(serie.episodios.map(ep => ep.temporada).filter(t => t != null))];
+
+  // 2. ¿Qué temporada mostramos por defecto?
+  let temporadaSeleccionada = temporadaAFiltrar;
+  if (!temporadaSeleccionada) {
+    // Si estamos viendo esta serie, mostramos la temporada del capítulo actual
+    if (sIndex === serieActivaIndex && serie.episodios[episodioActivoIndex].temporada) {
+      temporadaSeleccionada = serie.episodios[episodioActivoIndex].temporada;
+    } else if (temporadasUnicas.length > 0) {
+      // Si es una serie nueva, mostramos la temporada 1
+      temporadaSeleccionada = temporadasUnicas[0];
+    }
+  }
+
+  // 3. Dibujar el Menú Desplegable (<select>)
+  if (temporadasUnicas.length > 0) {
+    selectTemporada.classList.remove('oculto');
+    selectTemporada.innerHTML = ''; // Limpiar opciones viejas
+
+    temporadasUnicas.forEach(temp => {
+      const option = document.createElement('option');
+      option.value = temp;
+      option.textContent = `Temporada ${temp}`;
+      if (temp === temporadaSeleccionada) option.selected = true;
+      selectTemporada.appendChild(option);
+    });
+
+    // Si el usuario elige otra temporada en el menú, redibujamos la lista
+    selectTemporada.onchange = (e) => {
+      renderizarEpisodios(sIndex, parseInt(e.target.value));
+    };
+  } else {
+    // Si la serie no tiene temporadas en el JSON, ocultamos el menú
+    selectTemporada.classList.add('oculto');
+  }
+
+  // 4. Dibujar SOLO los episodios de la temporada elegida
   serie.episodios.forEach((ep, eIndex) => {
+    // Filtro mágico: Si el episodio no es de la temporada elegida, lo saltamos
+    if (temporadasUnicas.length > 0 && ep.temporada !== temporadaSeleccionada) return;
+
     const li = document.createElement('li');
     li.textContent = ep.titulo;
 
@@ -233,7 +278,6 @@ function renderizarEpisodios(sIndex) {
     }
 
     li.addEventListener('click', () => {
-      // EL SECRETO ESTÁ AQUÍ: Le pasamos 'true' para decirle que inicie desde cero
       cargarVideo(sIndex, eIndex, true);
       reproductor.play();
       modalEpisodios.classList.add('oculto');

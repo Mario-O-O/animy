@@ -66,15 +66,24 @@
 
   <div id="modal-episodios" class="modal oculto">
     <div class="modal-contenido">
-      <span id="btn-cerrar-modal" class="cerrar">&times;</span>
-      <h2>Lista de Episodios</h2>
-      <ul id="lista-videos"></ul>
+      <button id="btn-cerrar-modal" class="btn-cerrar">
+        <div class="equis">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+        </div>
+      </button>
+      <h2>Episodios</h2>
+
+      <select id="select-temporada" class="select-temporada oculto"></select>
+
+      <ul id="lista-videos">
+      </ul>
     </div>
   </div>
 
   <div id="pantalla-transicion" class="pantalla-mensaje oculto">
     <div class="mensaje-contenido">
-      <h2>¡Has terminado la serie!</h2>
+      <h2>Fin</h2>
       <p>Volviendo al inicio en 3 segundos...</p>
     </div>
   </div>
