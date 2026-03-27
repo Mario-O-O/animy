@@ -538,5 +538,14 @@ function reproducirAnterior() {
 
 btnPrevVideo.addEventListener('click', reproducirAnterior);
 
+// 4. Botón de Pantalla Completa
+btnFullscreen.addEventListener('click', () => {
+  if (!document.fullscreenElement) {
+    pantallaReproductor.requestFullscreen().catch(err => console.log(err));
+  } else {
+    document.exitFullscreen();
+  }
+});
+
 // Arrancar la aplicación
 inicializar();
