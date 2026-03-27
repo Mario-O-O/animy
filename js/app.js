@@ -95,9 +95,14 @@ function abrirSerie(sIndex) {
 
 // Botón para salir del video y volver a las portadas
 btnVolverInicio.addEventListener('click', () => {
-  reproductor.pause(); // Detener el video actual
-  pantallaReproductor.classList.add('oculto');
-  pantallaInicio.classList.remove('oculto');
+  // NUEVO: Verificamos si estamos en pantalla completa y nos salimos
+  if (document.fullscreenElement) {
+    document.exitFullscreen().catch(err => console.log("Error al salir de pantalla completa:", err));
+  }
+
+  reproductor.pause(); // Detenemos el video actual
+  pantallaReproductor.classList.add('oculto'); // Ocultamos el reproductor
+  pantallaInicio.classList.remove('oculto'); // Mostramos la grilla de series
 });
 
 // --- 4. LÓGICA DEL REPRODUCTOR ---
