@@ -1156,5 +1156,142 @@
         "temporada": 1
       }
     ]
+  },
+  {
+    "idSerie": "serie-05",
+    "nombreSerie": "Amagi brilliant park",
+    "portada": "./assets/amagi-brilliant-park.jpg",
+    "episodios": [
+      {
+        "idVideo": "abp-01",
+        "titulo": "Ep. 1 - ¡No hay suficientes visitantes!",
+        "url": "https://www.dropbox.com/scl/fi/ldzjp3udytyhhofqh6eg2/amagi-brilliant-park-capitulo-1.mp4?rlkey=c6ttffmy2rrzx7s92bd6s6sgf&st=hy3p60py&raw=1",
+        "introInicio": 46,
+        "introFin": 136,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-02",
+        "titulo": "Ep. 2 - ¡No hay suficiente tiempo!",
+        "url": "https://www.dropbox.com/scl/fi/ce4m2rjn2pk4rtmmqc35a/amagi-brilliant-park-capitulo-2.mp4?rlkey=2plv2i5uf86iswv7ojb3rya9l&st=lnhzdg9d&raw=1",
+        "introInicio": 58,
+        "introFin": 148,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-03",
+        "titulo": "Ep. 3 - ¡No hay suficientes refuerzos!",
+        "url": "https://www.dropbox.com/scl/fi/puz94pj4mqppaxzfj0ugj/amagi-brilliant-park-capitulo-3.mp4?rlkey=h4wpqwg5bn049egapbz3338m3&st=4bqoxggh&raw=1",
+        "introInicio": 15,
+        "introFin": 105,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-04",
+        "titulo": "Ep. 4 - ¡No hay suficiente productividad!",
+        "url": "https://www.dropbox.com/scl/fi/wrpv1ftjhsdf5xn8n46ly/amagi-brilliant-park-capitulo-4.mp4?rlkey=c38gbfl3hx4hky1mz8aoxzjms&st=dh9gx1du&raw=1",
+        "introInicio": 44,
+        "introFin": 134,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-05",
+        "titulo": "Ep. 5 - ¡No hay suficiente dinero!",
+        "url": "https://www.dropbox.com/scl/fi/86yryxv8831y1s7ps8gmu/amagi-brilliant-park-capitulo-5.mp4?rlkey=iokof8z09shh7gm7qnz26pz8p&st=8od3srta&raw=1",
+        "introInicio": 104,
+        "introFin": 194,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-06",
+        "titulo": "Ep. 6 - ¡No hay suficiente gente!",
+        "url": "https://www.dropbox.com/scl/fi/ovamkzpmtcbsrpmebizpr/amagi-brilliant-park-capitulo-6.mp4?rlkey=wn0bo98mk1s2jflpvtswb7tvs&st=8c0bcben&raw=1",
+        "introInicio": 67,
+        "introFin": 157,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-07",
+        "titulo": "Ep. 7 - ¡No hay suficiente seguridad en la piscina!",
+        "url": "https://www.dropbox.com/scl/fi/yz1nxfw955leq20tdilub/amagi-brilliant-park-capitulo-7.mp4?rlkey=ta8ycpgsmlfm9sz2wmdyzrawf&st=2v2x6sgz&raw=1",
+        "introInicio": 127,
+        "introFin": 217,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-08",
+        "titulo": "Ep. 8 - ¡No hay suficiente amor!",
+        "url": "https://www.dropbox.com/scl/fi/xfrc8c08dwmlomt5fthoa/amagi-brilliant-park-capitulo-8.mp4?rlkey=4cfk9zfud7e64z2brlfav1gt7&st=ax0k4fhf&raw=1",
+        "introInicio": 28,
+        "introFin": 118,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-09",
+        "titulo": "Ep. 9 - ¡No hay suficiente trabajo en equipo!",
+        "url": "https://www.dropbox.com/scl/fi/qpdm583ykvuve7wlt5ak1/amagi-brilliant-park-capitulo-9.mp4?rlkey=0qkofvd7fv7wau9kdu78ng1ja&st=xv6kzlx1&raw=1",
+        "introInicio": 39,
+        "introFin": 129,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-10",
+        "titulo": "Ep. 10 - ¡Nada puede hacerse!",
+        "url": "https://www.dropbox.com/scl/fi/a9r4fvpb1ayoape27rpig/amagi-brilliant-park-capitulo-10.mp4?rlkey=ia1cowigrn2mchrow2sh7ngvb&st=5tqnrnjd&raw=1",
+        "introInicio": 110,
+        "introFin": 200,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-11",
+        "titulo": "Ep. 11 - ¡No hay nada de que preocuparse ahora!",
+        "url": "https://www.dropbox.com/scl/fi/slwh3w25phm0wtbcket3c/amagi-brilliant-park-capitulo-11.mp4?rlkey=yh5unktghjo78z0czw9lo8vns&st=5pli6o9m&raw=1",
+        "introInicio": 80,
+        "introFin": 170,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-12",
+        "titulo": "Ep. 12 - ¡Nadie sabe que nos aguarda el futuro!",
+        "url": "https://www.dropbox.com/scl/fi/jkot4soeo3xrjj2oy6mw1/amagi-brilliant-park-capitulo-12.mp4?rlkey=pkh20o8uoyh8no8i8um3av316&st=2pvpcr38&raw=1",
+        "introInicio": 42,
+        "introFin": 132,
+        "endingInicio": 1330,
+        "endingFin": 1420,
+        "temporada": 1
+      },
+      {
+        "idVideo": "abp-13",
+        "titulo": "Ep. 13 - ¡No es un buen vídeo promocional!",
+        "url": "https://www.dropbox.com/scl/fi/cdzjj45n5ajgpchdjl77b/amagi-brilliant-park-capitulo-13.mp4?rlkey=jor0mz4ey4xil5rsj2wl1uub9&st=o16ykz68&raw=1",
+        "introInicio": 125,
+        "introFin": 215,
+        "endingInicio": 1334,
+        "endingFin": 1424,
+        "temporada": 1
+      }
+    ]
   }
 ]
