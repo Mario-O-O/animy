@@ -183,13 +183,22 @@ body {
 }
 
 .header-inicio {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
   margin-bottom: 30px;
+}
+
+.ico-burro {
+  width: 100%;
+  max-width: 40px;
 }
 
 .header-inicio h1 {
   color: #fff;
   font-size: 2.2rem;
   font-weight: lighter;
+  line-height: 35px;
 }
 
 /* Cuadrícula adaptable para las portadas */
