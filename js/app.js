@@ -350,7 +350,7 @@ reproductor.addEventListener('pause', () => {
   timeoutPausa10s = setTimeout(() => {
     infoPausa.classList.remove('oculto');
     pantallaReproductor.style.cursor = 'none';
-  }, 1000);
+  }, 0);
 });
 
 // 3. Lógica para cuando le damos PLAY
