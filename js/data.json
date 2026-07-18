@@ -1293,5 +1293,272 @@
         "temporada": 1
       }
     ]
+  },
+  {
+    "idSerie": "serie-06",
+    "nombreSerie": "Bleach",
+    "portada": "./assets/bleach.jpg",
+    "episodios": [
+      {
+        "idVideo": "bleach-01",
+        "titulo": "Ep. 1 - El Día que me Convertí en Shinigami",
+        "url": "https://www.dropbox.com/scl/fi/260dac55oidi9r5r51itj/01.mp4?rlkey=2q6lfo68n128u5j8j82nkq83c&st=3qxz1ag2&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-02",
+        "titulo": "Ep. 2 - Trabajo de Shinigami",
+        "url": "https://www.dropbox.com/scl/fi/015i4444xnv15xs60khe1/02.mp4?rlkey=0my53geonelgd5bv65t1c3m9p&st=yhbqqcrz&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-03",
+        "titulo": "Ep. 3 - Deseo del Hermano Mayor, Deseo de la Hermana Pequeña",
+        "url": "https://www.dropbox.com/scl/fi/trph0qwtj5v4x05xi4ogx/03.mp4?rlkey=5p9ktz3dzof4r6vtuu1lyuyef&st=ldyy064h&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-04",
+        "titulo": "Ep. 4 - Periquito Maldito",
+        "url": "https://www.dropbox.com/scl/fi/p9rnyhbhg5skt599vsudh/04.mp4?rlkey=pjzx2am1h3hjghwkh3gvdxnrf&st=l7b7ac72&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-05",
+        "titulo": "Ep. 5 - ¡Vence al Enemigo Invisible!",
+        "url": "https://www.dropbox.com/scl/fi/qwffwlsheu3xkq6howueg/05.mp4?rlkey=jv9kvsqm3pbs3xdowge8uh7su&st=5dkk2r3s&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-06",
+        "titulo": "Ep. 6 - ¡Lucha hasta la Muerte! Ichigo Vs Ichigo",
+        "url": "https://www.dropbox.com/scl/fi/yhocv5asul4x4r4wr3mb2/06.mp4?rlkey=4s4fo28eeam1dibb9dfo8xxyj&st=ydg3l1t1&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-07",
+        "titulo": "Ep. 7 - Saludos de parte del Oso de Peluche",
+        "url": "https://www.dropbox.com/scl/fi/onkkk89ssi1t1p6vljv2n/07.mp4?rlkey=g9ayq10hjg8tnmvysx67x1wlv&st=ay6c3q9w&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-08",
+        "titulo": "Ep. 8 - 17 de Junio, Recuerdos de Lluvia",
+        "url": "https://www.dropbox.com/scl/fi/zwsnpmjf6dt9fd0oot6ip/08.mp4?rlkey=ko7a9sd3tnc6nuagzcatno2wp&st=indh4wbe&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-09",
+        "titulo": "Ep. 9 - Enemigo Invencible",
+        "url": "https://www.dropbox.com/scl/fi/o6ryksiz5sqleaw5yi4yu/09.mp4?rlkey=l5gllu2ghxjas33oeycb2rvf8&st=ob3jr9j2&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-10",
+        "titulo": "Ep. 10 - Asalto Durante la Visita a Tierra Sagrada",
+        "url": "https://www.dropbox.com/scl/fi/cb9ej3mua5jzu8cka6p26/10.mp4?rlkey=b6mrxlw9dbeoo3kln0is88f6n&st=vmfjw9gu&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-11",
+        "titulo": "Ep. 11 - El Legendario Quincy",
+        "url": "https://www.dropbox.com/scl/fi/x4sjwti5cbnl7sg9g1tjs/11.mp4?rlkey=uxb6n7shiwomf9y0yv7h229fj&st=7mua33ac&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-12",
+        "titulo": "Ep. 12 - Un Brazo Derecho Amable",
+        "url": "https://www.dropbox.com/scl/fi/64amqjpis02gbhn656ivz/12.mp4?rlkey=eroxjbxawaubssel58n8lqbmj&st=yt8mi0z9&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-13",
+        "titulo": "Ep. 13 - La Flor y el Hollow",
+        "url": "https://www.dropbox.com/scl/fi/qqccc6mnifb7fzs4av9de/13.mp4?rlkey=elzns1ay1ff914y4mqhgvulv8&st=uzf1n3o3&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-14",
+        "titulo": "Ep. 14 - Espalda con Espalda, Una Lucha a Muerte",
+        "url": "https://www.dropbox.com/scl/fi/6ls9uggas3r44pwpaec89/14.mp4?rlkey=6oaodwgwnox6ct2a5pdz32qzp&st=zerjuquk&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-15",
+        "titulo": "Ep. 15 - El Gran Plan de Kon",
+        "url": "https://www.dropbox.com/scl/fi/xiy3p19vcc7y8mhshhmgp/15.mp4?rlkey=edr9l8zscynhopl43nuo41kra&st=jt5ux3pk&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-16",
+        "titulo": "Ep. 16 - Abarai Renji ¡El Encuentro!",
+        "url": "https://www.dropbox.com/scl/fi/wr60nipgavxmmvaajxktm/16.mp4?rlkey=vm1k18yzws0ct4r4dc46fr34z&st=ja15ggjp&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-17",
+        "titulo": "Ep. 17 - ¡Ichigo Muere!",
+        "url": "https://www.dropbox.com/scl/fi/4wunkt8ye5ke9bwggzal6/17.mp4?rlkey=06mlqina6xqiklozun4yhqw31&st=j4vm9xy7&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-18",
+        "titulo": "Ep. 18 - ¡Recupéralo! El Poder de Shinigami",
+        "url": "https://www.dropbox.com/scl/fi/0wcuppvcekvixqep0x3pb/18.mp4?rlkey=7x4pgqgifjhkrjwte2pmou3wx&st=aosn85kw&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-19",
+        "titulo": "Ep. 19 - ¡Ichigo se Convierte en Hollow!",
+        "url": "https://www.dropbox.com/scl/fi/nzvwxt2u0nody56u89q3s/19.mp4?rlkey=re7z0ni6f3q3mljc7ev5fuanj&st=6big9jhf&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-20",
+        "titulo": "Ep. 20 - La Sombra de Ichimaru Gin",
+        "url": "https://www.dropbox.com/scl/fi/rhipkmcyakcij08wsfly3/20.mp4?rlkey=u2az2os20wtqwl02dfm3u6loi&st=gyhdpodt&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 1
+      },
+      {
+        "idVideo": "bleach-21",
+        "titulo": "Ep. 21 - ¡Entra! El Mundo de los Shinigamis",
+        "url": "https://www.dropbox.com/scl/fi/ovl3szpxwhmdx4gz6seob/21.mp4?rlkey=amrxjufwkm4j2ux7q4voe9kpy&st=g35rf2uw&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 2
+      },
+      {
+        "idVideo": "bleach-22",
+        "titulo": "Ep. 22 - El Hombre que Odia a los Shinigamis",
+        "url": "https://www.dropbox.com/scl/fi/5qm1s8jwo8qyuyn1z9w58/22.mp4?rlkey=8xyjasojp7pmjf3h8uap5peif&st=im4dhvjh&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 2
+      },
+      {
+        "idVideo": "bleach-23",
+        "titulo": "Ep. 23 - La Sentencia de Rukia, Antes del Día 14",
+        "url": "https://www.dropbox.com/scl/fi/us91hmxls164auaqx4e8y/23.mp4?rlkey=4rkh5xpqjqjkf8q1y17rdiqb8&st=eoz8jhoy&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 2
+      },
+      {
+        "idVideo": "bleach-24",
+        "titulo": "Ep. 24 - ¡Reunión! Las 13 Divisiones",
+        "url": "https://www.dropbox.com/scl/fi/e5k2ngoy4w8bzunwr9nr5/24.mp4?rlkey=bcofv0k93l5omeky12ddycr5t&st=ivg3xt1z&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 2
+      },
+      {
+        "idVideo": "bleach-25",
+        "titulo": "Ep. 25 - ¿Penetrar al Centro con una Bomba Enorme?",
+        "url": "https://www.dropbox.com/scl/fi/2jif2gm9el2eml5ybopzb/25.mp4?rlkey=ut6tz4gggflx0e0su7fbidgl0&st=z7stc1oz&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 2
+      },
+      {
+        "idVideo": "bleach-26",
+        "titulo": "Ep. 26 - ¡Formación! La Peor Reputación",
+        "url": "https://www.dropbox.com/scl/fi/ncie1dn13vy2y7d4ervz9/26.mp4?rlkey=en37mii5gqjbuxh6inqgh6s55&st=plqk4mmt&raw=1",
+        "introInicio": 0,
+        "introFin": 90,
+        "endingInicio": 1230,
+        "endingFin": 1320,
+        "temporada": 2
+      }
+    ]
   }
 ]
