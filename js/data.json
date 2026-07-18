@@ -1797,7 +1797,8 @@
         "introFin": 83,
         "endingInicio": 1285,
         "endingFin": 1350,
-        "temporada": 3
+        "temporada": 3,
+        "relleno": true
       },
       {
         "idVideo": "bleach-51",

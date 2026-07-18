@@ -302,7 +302,16 @@ function renderizarEpisodios(sIndex, temporadaAFiltrar = null) {
     if (temporadasUnicas.length > 0 && ep.temporada !== temporadaSeleccionada) return;
 
     const li = document.createElement('li');
-    li.textContent = ep.titulo;
+    const tituloSpan = document.createElement('span');
+    tituloSpan.textContent = ep.titulo;
+    li.appendChild(tituloSpan);
+
+    if (ep.relleno) {
+      const etiqueta = document.createElement('span');
+      etiqueta.className = 'etiqueta-relleno';
+      etiqueta.textContent = 'RELLENO';
+      li.appendChild(etiqueta);
+    }
 
     if (sIndex === serieActivaIndex && eIndex === episodioActivoIndex) {
       li.classList.add('activo');
