@@ -238,21 +238,29 @@ body {
   background-color: #222;
   border-radius: 20px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.6s ease;
 }
 
 /* Efecto interactivo al pasar el mouse */
 .tarjeta-serie:hover {
-  transform: scale(1.08);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+  background-color: #4c4c4c;
   z-index: 2;
 }
 
-.tarjeta-serie img {
+.tarjeta-serie:hover .tarjeta-serie-img img {
+  transform: scale(1.1);
+}
+
+.tarjeta-serie-img {
+  overflow: hidden;
+}
+
+.tarjeta-serie-img img {
   width: 100%;
   height: 320px;
   object-fit: cover;
   display: block;
+  transition: all 0.6s ease;
 }
 
 .tarjeta-serie h3 {

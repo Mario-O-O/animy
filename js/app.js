@@ -69,7 +69,9 @@ function renderizarInicio() {
 
     // Asignar imagen
     tarjeta.innerHTML = `
-            <img src="${serie.portada}" alt="${serie.nombreSerie}" onerror="this.src='https://via.placeholder.com/220x320?text=Sin+Portada'">
+            <div class="tarjeta-serie-img">
+                <img src="${serie.portada}" alt="${serie.nombreSerie}" onerror="this.src='https://via.placeholder.com/220x320?text=Sin+Portada'">
+            </div>
             <h3>${serie.nombreSerie}</h3>
         `;
 
