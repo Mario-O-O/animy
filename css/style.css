@@ -60,6 +60,10 @@ body {
   color: #000;
 }
 
+.btn-flotante-arriba {
+  bottom: calc(15% + 55px);
+}
+
 /* Botón de la interfaz para abrir episodios */
 .btn-interfaz,
 .btn-interfaz-home {

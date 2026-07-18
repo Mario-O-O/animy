@@ -7,6 +7,9 @@ const btnVolverInicio = document.getElementById('btn-volver-inicio');
 const reproductor = document.getElementById('reproductor');
 const btnSkipIntro = document.getElementById('btn-skip-intro');
 const btnSkipEnding = document.getElementById('btn-skip-ending');
+const btnOmitirEnding = document.getElementById('btn-omitir-ending');
+let forzarBotonSiguiente = false;
+let timeoutBotonSiguiente = null;
 const btnAbrirLista = document.getElementById('btn-abrir-lista');
 const btnCerrarModal = document.getElementById('btn-cerrar-modal');
 const modalEpisodios = document.getElementById('modal-episodios');
@@ -172,16 +175,34 @@ reproductor.addEventListener('timeupdate', () => {
     btnSkipIntro.classList.add('oculto');
   }
 
-  // 5. Lógica para mostrar "Siguiente Episodio" (Ending)
+  // 5. Lógica para mostrar "Siguiente Episodio" y "Omitir Ending"
   if (tiempoActual >= episodioActual.endingInicio && tiempoActual <= episodioActual.endingFin) {
     btnSkipEnding.classList.remove('oculto');
+    btnOmitirEnding.classList.remove('oculto');
   } else {
-    btnSkipEnding.classList.add('oculto');
+    btnOmitirEnding.classList.add('oculto');
+    if (!forzarBotonSiguiente) {
+      btnSkipEnding.classList.add('oculto');
+    }
   }
 });
 
 btnSkipIntro.addEventListener('click', () => {
   reproductor.currentTime = catalogo[serieActivaIndex].episodios[episodioActivoIndex].introFin;
+});
+
+btnOmitirEnding.addEventListener('click', () => {
+  reproductor.currentTime = catalogo[serieActivaIndex].episodios[episodioActivoIndex].endingFin;
+  btnOmitirEnding.classList.add('oculto');
+
+  // Mantenemos visible "Siguiente Episodio" 6 segundos aunque salgamos del rango del ending
+  forzarBotonSiguiente = true;
+  btnSkipEnding.classList.remove('oculto');
+  clearTimeout(timeoutBotonSiguiente);
+  timeoutBotonSiguiente = setTimeout(() => {
+    forzarBotonSiguiente = false;
+    btnSkipEnding.classList.add('oculto');
+  }, 6000);
 });
 
 btnSkipEnding.addEventListener('click', reproducirSiguiente);
@@ -190,6 +211,10 @@ reproductor.addEventListener('ended', reproducirSiguiente);
 function reproducirSiguiente() {
   const serieActual = catalogo[serieActivaIndex];
   const episodioActual = serieActual.episodios[episodioActivoIndex];
+
+  // Cancelamos el forzado de "Siguiente Episodio" al cambiar de capítulo
+  clearTimeout(timeoutBotonSiguiente);
+  forzarBotonSiguiente = false;
 
   // Reiniciar el contador del episodio
   localStorage.setItem(`tiempo_${episodioActual.idVideo}`, 0);
@@ -201,6 +226,7 @@ function reproducirSiguiente() {
   } else {
     reproductor.pause();
     btnSkipEnding.classList.add('oculto');
+    btnOmitirEnding.classList.add('oculto');
     btnSkipIntro.classList.add('oculto');
     localStorage.setItem(`ep_activo_serie_${serieActivaIndex}`, 0);
 
