@@ -49,6 +49,10 @@ async function inicializar() {
   try {
     const respuesta = await fetch('./js/data.json');
     catalogo = await respuesta.json();
+
+    // Ordenamos las series alfabéticamente sin importar el orden del JSON
+    catalogo.sort((a, b) => a.nombreSerie.localeCompare(b.nombreSerie, 'es', { sensitivity: 'base' }));
+
     renderizarInicio(); // Mostrar portadas al abrir la app
   } catch (error) {
     console.error("Error cargando el JSON.", error);

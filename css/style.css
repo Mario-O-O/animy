@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 300;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -208,7 +208,7 @@ body {
 .header-inicio {
   display: flex;
   align-items: flex-end;
-  gap: 10px;
+  gap: 25px;
   margin-bottom: 30px;
 }
 
@@ -219,9 +219,10 @@ body {
 
 .header-inicio h1 {
   color: #fff;
-  font-size: 2.2rem;
-  font-weight: lighter;
+  font-size: 1.6rem;
   line-height: 35px;
+  font-weight: 500;
+  letter-spacing: 0.5em;
 }
 
 /* Cuadrícula adaptable para las portadas */
@@ -361,9 +362,9 @@ body {
 }
 
 .info-pausa h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   /* Más pequeño que antes */
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .info-pausa h2 .etiqueta-relleno {
