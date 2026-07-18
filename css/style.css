@@ -260,6 +260,9 @@ body {
   text-align: center;
   color: #fff;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* --- PANTALLA DE TRANSICIÓN --- */
@@ -692,5 +695,23 @@ body {
 
   .info-pausa {
     bottom: 75px;
+  }
+
+  #pantalla-inicio {
+    padding: 20px;
+  }
+
+  .grid-series {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .tarjeta-serie img {
+    height: 241px;
+  }
+
+  .tarjeta-serie h3 {
+    font-size: 0.9rem;
+    padding: 10px 8px;
   }
 }

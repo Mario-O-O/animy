@@ -251,6 +251,9 @@ function reproducirSiguiente() {
 
 // ¡Estos eran los dos botones que se nos habían borrado!
 btnAbrirLista.addEventListener('click', () => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen().catch(err => console.log("Error al salir de pantalla completa:", err));
+  }
   modalEpisodios.classList.remove('oculto');
   renderizarEpisodios(serieActivaIndex);
 });
