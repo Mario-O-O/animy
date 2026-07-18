@@ -363,6 +363,11 @@ body {
   font-weight: bold;
 }
 
+.info-pausa h2 .etiqueta-relleno {
+  margin-right: 12px;
+  vertical-align: middle;
+}
+
 /* --- CONTROLES DE VIDEO PERSONALIZADOS --- */
 .controles-video {
   position: absolute;

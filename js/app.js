@@ -115,7 +115,14 @@ function cargarVideo(sIndex, eIndex, iniciarDesdeCero = false) {
   const episodioActual = catalogo[sIndex].episodios[eIndex];
 
   pausaSerie.textContent = catalogo[sIndex].nombreSerie;
-  pausaCapitulo.textContent = episodioActual.titulo;
+  pausaCapitulo.innerHTML = '';
+  if (episodioActual.relleno) {
+    const etiqueta = document.createElement('span');
+    etiqueta.className = 'etiqueta-relleno';
+    etiqueta.textContent = 'RELLENO';
+    pausaCapitulo.appendChild(etiqueta);
+  }
+  pausaCapitulo.appendChild(document.createTextNode(episodioActual.titulo));
 
   // Actualizamos la memoria de qué capítulo general vamos
   localStorage.setItem(`ep_activo_serie_${sIndex}`, eIndex);
@@ -302,9 +309,6 @@ function renderizarEpisodios(sIndex, temporadaAFiltrar = null) {
     if (temporadasUnicas.length > 0 && ep.temporada !== temporadaSeleccionada) return;
 
     const li = document.createElement('li');
-    const tituloSpan = document.createElement('span');
-    tituloSpan.textContent = ep.titulo;
-    li.appendChild(tituloSpan);
 
     if (ep.relleno) {
       const etiqueta = document.createElement('span');
@@ -312,6 +316,10 @@ function renderizarEpisodios(sIndex, temporadaAFiltrar = null) {
       etiqueta.textContent = 'RELLENO';
       li.appendChild(etiqueta);
     }
+
+    const tituloSpan = document.createElement('span');
+    tituloSpan.textContent = ep.titulo;
+    li.appendChild(tituloSpan);
 
     if (sIndex === serieActivaIndex && eIndex === episodioActivoIndex) {
       li.classList.add('activo');
